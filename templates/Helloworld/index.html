@@ -1,0 +1,11 @@
+{% extends 'Helloworld/base.html' %}
+{% block body %}
+<h1>Hello World!</h1>
+<ul>
+    {% for mentor in mentors %}
+    <li>{{mentor}}</li>
+    {% endfor %}
+</ul>
+<span>Developed by : {{developer}}</span>
+{% endblock %}
+
